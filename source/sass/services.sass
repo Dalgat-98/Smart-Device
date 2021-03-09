@@ -1,0 +1,132 @@
+.services
+  padding: 93px 0 127px
+  background-color: $dark-color
+  
+  &__container
+    width: 61%
+    margin: 0 auto
+  
+  &__title
+    margin-bottom: 47px
+    font-family: font-roboto-condensed
+    font-size: 36px
+    line-height: 51px
+    color: #ffffff
+    
+  &__list
+    display: flex
+    flex-wrap: wrap
+    
+  &__item
+    margin-right: 30px
+    width: calc(33.3% - 20px)
+
+    
+    &-link
+      position: relative
+      display: block
+      padding: 53px 155px 0 43px
+      font-family: $font-roboto-condensed
+      font-size: 20px
+      line-height: 30px
+      color: #ffffff
+      height: 567px
+      background-repeat: no-repeat
+      
+      &::before
+        position: absolute
+        content: ">"
+        height: 63px
+        width: 63px
+        display: flex
+        justify-content: center
+        align-items: center
+        top: calc(100% - 63px) 
+        left: calc(100% - 63px) 
+        background-color: $blue-color
+    
+  &__item:last-child
+    margin-right: 0
+  
+  &__make-boards
+    background-image: url(../img/make-boards-desktop@1x.png)
+  
+  &__mounting-boards
+    background-image: url(../img/mounting-boards-desktop@1x.png)
+  
+  &__complete-boards
+    background-image: url(../img/complete-boards-desktop@1x.png) 
+  
+
+@media (max-width: $not-desktop-width)
+  .services
+    padding: 53px 0 78px
+  
+    &__container
+      width: auto
+      margin: 0px 25px
+      
+    &__list
+      flex-direction: column
+  
+    &__title
+      margin-bottom: 46px
+      font-size: 32px
+      line-height: 140%
+    
+    &__item
+      margin-right: 0
+      margin-bottom: 46px
+      width: auto
+    
+      &-link
+        padding: 43px 0 0 43px
+        height: 213px
+        background-repeat: no-repeat
+        background-size: cover
+  
+    &__make-boards
+      background-image: url(../img/make-boards-tablet@1x.png)
+  
+    &__mounting-boards
+      background-image: url(../img/mounting-boards-tablet@1x.png)
+  
+    &__complete-boards
+      background-image: url(../img/complete-boards-tablet@1x.png)
+  
+  
+  
+@media (max-width: $mobile-width-only)
+  .services
+    padding: 53px 0 64px
+  
+    &__container
+      width: auto
+      margin: 0px 15px
+      
+    &__list
+      flex-direction: column
+  
+    &__title
+      margin-bottom: 37px
+      font-size: 28px
+      line-height: 140%
+    
+    &__item
+      margin-bottom: 30px
+      width: auto
+    
+      &-link
+        padding: 23px 0 0 35px
+        height: 233px
+        background-repeat: no-repeat
+        background-size: cover
+  
+    &__make-boards
+      background-image: url(../img/make-boards-mobile@1x.png)
+  
+    &__mounting-boards
+      background-image: url(../img/mounting-boards-mobile@1x.png)
+  
+    &__complete-boards
+      background-image: url(../img/complete-boards-mobile@1x.png)

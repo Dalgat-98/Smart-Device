@@ -1,0 +1,38 @@
+.logo
+  display: flex
+  
+  &__image
+    margin-right: 15px
+    
+  &__text
+    padding-top: 6px
+    
+  &__title
+    color: #ffffff
+    font-family: $font-roboto-condensed
+    font-size: 25px
+    line-height: 29px
+    margin-bottom: 1px
+    
+  &--footer
+    color: #000000
+    
+  &__description
+    color: #788891
+    font-family: $font-roboto
+    font-weight: 500
+    font-size: 12px
+    line-height: 14px
+    
+@media (max-width: $mobile-width)
+  .logo
+    &__image
+      width: 38px
+      height: 38px
+      
+      &--footer
+        width: 52px
+        height: 52px
+    
+    &__text--header
+      display: none

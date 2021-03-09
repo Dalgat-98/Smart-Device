@@ -1,0 +1,30 @@
+.page-header
+  padding: 33px 0 20px
+  background-color: $dark-color
+  background-image: url(../img/main-background@1x.png), url(../img/circuit-desktop@1x.png), url(../img/main-triangles-desktop@1x.png)
+  background-size: cover, auto, 35%
+  background-repeat: no-repeat
+  background-position: 80% 50%, 85.3% 70.9%, 82.5% 49%
+  
+  &__top
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 73.5%
+    margin: 0 auto
+      
+  &__logo
+    margin-right: 30px
+    
+.banner
+  width: 74%
+  margin: 0 auto
+  padding-top: 210px
+  padding-bottom: 80px
+  
+  &__button--mobile
+    display: none
+    
+@media (min-width: $not-desktop-width)
+  .page-header__top
+    min-width: 880px

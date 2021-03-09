@@ -1,0 +1,99 @@
+.information
+  max-width: 1170px
+  margin: 0 auto 110px
+  
+  &__item
+    display: flex
+    
+  &__fig
+    display: flex
+    flex-direction: row
+    justify-content: center
+    
+  &__image-desktop2x
+    display: none
+      
+  &__image-tablet1x
+    display: none
+    
+  &__image-tablet2x
+    display: none
+    
+  &__figcaption
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    
+    &-title
+      font-family: $font-roboto-condensed
+      font-size: 36px
+      line-height: 51px
+      color: $font-color
+      
+    &-info
+      margin-top: 18px
+      font-family: $font-pt-mono
+      font-size: 16px
+      line-height: 22px
+      color: $font-color
+      
+    &-button
+      width: 180px
+      margin-top: 15px
+      color: $blue-color
+      background: none
+      border: 1px solid $font-color
+    
+@media(max-width: $not-desktop-width)
+  .information
+    margin: 0 auto 83px
+    
+    &__fig
+      margin: 0 25px
+      
+    &__image-desktop1x
+      display: none
+      
+    &__image-tablet1x
+      display: block
+      
+    &__figcaption
+      &-title
+        font-size: 32px
+        line-height: 140%
+      
+      &-info
+        margin-top: 24px
+      
+      &-button
+        margin-top: 34px
+
+@media(max-width: $mobile-width-only)
+  .information
+    margin: 0 auto 65px
+    
+    &__fig
+      margin: 0 15px
+      
+    &__image-desktop1x
+      display: none
+    
+    &__image-desktop2x
+      display: none
+      
+    &__image-tablet1x
+      display: none
+    
+    &__image-tablet2x
+      display: none
+    
+    &__figcaption
+      &-title
+        font-size: 28px
+        line-height: 140%
+      
+      &-info
+        margin-top: 18px 
+      
+      &-button
+        margin-top: 25px

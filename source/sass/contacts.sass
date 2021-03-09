@@ -1,0 +1,106 @@
+.nav
+  &__contacts
+    display: flex
+    align-items: center
+    
+  &__list
+    display: flex
+    align-items: center
+    
+  &__item:first-child
+    margin-right: 80px
+    
+  &__item a
+    padding-left: 40px
+    line-height: 18px
+    font-size: 16px
+    color: #ffffff
+    position: relative
+    
+    &::before
+      position: absolute
+      content: ""
+      width: 40px
+      height: 20px
+      left: 0
+      top: 0
+      background-repeat: no-repeat
+    
+  &__button
+    margin-left: 38px
+    color: #ffffff
+    border: 1px solid #ffffff
+    
+  &__item-mail a::before
+    background-image: url(../img/icon-envelope.svg)
+    top: 2px
+    
+  &__item-tel a::before
+    background-image: url(../img/icon-phone-call.svg)
+    left: 4px
+    
+@media (max-width: $not-desktop-width)
+  .nav
+    &__list
+    
+    &__item:first-child
+      margin-right: 33px
+      
+    &__item
+      padding-top: 14px
+      
+    & a
+      font-size: 0
+      line-height: 0
+      padding-top: 26px
+      padding-left: 17px
+      
+      &::beefore
+        width: 25px
+        height: 26px
+        top: 0
+        left: 0
+        background-repeat: no-repeat
+        background-size: contain
+      
+    &__button
+      display: none
+        
+@media (max-width: $mobile-width-only) 
+  .contacts
+    padding-right: 0
+
+    &__item
+      margin-right: 0
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+      

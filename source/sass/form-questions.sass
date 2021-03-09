@@ -1,0 +1,182 @@
+.form-questions
+  height: 670px
+  background-color: $blue-color
+  background-image: url(../img/form-triangles-desktop@1x.png)
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: 21% 46%
+  
+  &__container
+    max-width: 61%
+    margin: 0 auto
+    padding: 96px 0 114px
+    display: flex
+    justify-content: center
+    
+  &__image
+    margin: 65px 6% 0 0
+    
+  &__title
+    font-family: $font-roboto-condensed
+    font-weight: normal
+    font-size: 36px
+    line-height: 51px
+    color: #ffffff
+    margin-bottom: 7px
+    
+  &__info
+    font-family: $font-pt-mono
+    font-size: 16px
+    line-height: 22px
+    color: #ffffff
+    margin-bottom: 50px
+    
+.form
+  width: 570px
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+    
+  &__name-phone
+    display: flex
+    justify-content: space-between
+    margin-bottom: 40px
+    
+    & input
+      height: 50px
+      width: 270px
+      padding: 14px 16px
+      box-sizing: border-box
+      background-color: rgba(256, 256, 256, 0.1)
+      border: none
+      
+      &::placeholder 
+        color: #ffffff
+      
+  > input
+    height: 154px
+    width: 570px
+    padding: 14px 14px 120px 16px
+    box-sizing: border-box
+    margin-bottom: 40px
+    background-color: rgba(256, 256, 256, 0.1)
+    color: #ffffff
+    border: none
+      
+    &::placeholder 
+      color: #ffffff
+    
+  &__questions-check
+    display: flex
+    
+  &__question-checked
+    margin-left: 38px
+    & > input
+      margin: 8px 16px 0 0
+      
+    & > label
+      margin-top: 8px
+      font-family: $font-pt-mono
+      font-size: 14px
+      line-height: 16px
+      color: #ffffff
+      opacity: 0.8
+      
+  &__button
+    width: 270px
+    border: 1px solid #ffffff
+    color: #ffffff
+    background: none
+    
+@media (max-width: 1160px)
+  .form-questions
+    &__image
+      display: none
+  
+@media (max-width: $not-desktop-width)
+  .form-questions
+    background-image: none
+  
+    &__container
+      max-width: 76%
+      padding: 83px 0 103px
+      justify-content: center
+    
+    &__title
+      font-size: 32px
+      line-height: 140%
+      margin-bottom:33px
+    
+    &__info
+      margin-bottom: 45px
+    
+  .form
+    width: 590px
+    
+    &__name-phone
+    
+      & input
+        width: 280px
+      
+    > input
+      height: 159px
+      width: 590px
+      margin-bottom: 30px
+    
+    &__questions-check
+      display: flex
+    
+    &__question-checked
+      & > input
+        margin: 10px 17px 0 0
+      
+      & > label
+        margin-top: 10px
+      
+    &__button
+      width: 280px
+
+@media (max-width: $mobile-width-only)
+  .form-questions
+  
+    &__container
+      width: 91%
+      padding: 33px 0 41px
+      margin: 0 auto
+    
+    &__title
+      font-size: 28px
+      line-height: 140%
+    
+  .form
+    width: 100%
+    
+    &__name-phone
+      flex-direction: column
+      margin-bottom: 0
+    
+      & input
+        width: 100%
+        margin-bottom: 30px
+      
+    > input
+      width: 100%
+      height: 104px
+      margin-bottom: 30px
+    
+    &__questions-check
+      display: flex
+      flex-wrap: wrap
+      flex-direction: row
+    
+    &__question-checked
+      margin-left: 0
+      & > input
+        margin: 0 17px 0 0
+      
+      & > label
+        margin-top: 0
+      
+    &__button
+      width: 100%
+      margin-bottom: 15px

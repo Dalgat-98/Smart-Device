@@ -1,0 +1,98 @@
+.banner
+  &__button--mobile
+    display: none
+  &__title
+    font-family: $font-roboto-condensed
+    font-size: 80px
+    line-height: 94px
+    letter-spacing: 0.07em
+    text-transform: uppercase
+    color: #ffffff
+    margin-bottom: 31px
+    
+  &__info
+    position: relative
+    box-sizing: border-box
+    font-size: 22px
+    line-height: 34px
+    color: #ffffff
+    width: 45%
+    padding-left: 97px
+    
+    &::before
+      position: absolute
+      content: ""
+      width: 66px
+      height: 2px
+      background-color: #ffffff
+      left: 3px
+      top: 17px
+    
+  &__button-wrapper
+    margin: 37px 0 93px 94px
+      
+  &__button
+    width: 408px
+    background-color: $blue-color
+    color: #ffffff
+    border: none
+    font-size: 16px
+    line-height: 19px
+    padding-left: 28px
+    padding-right: 28px
+    padding-top: 17px
+    padding-bottom: 19px
+    
+  &__scroll
+    padding-top: 2px
+    writing-mode: vertical-rl
+    transform: rotate(180deg)
+    color: #ffffff
+    opacity: 0.5
+    font-size: 14px
+    line-height: 16px
+    cursor: pointer
+    
+    
+@media (max-width: $not-desktop-width)
+  .banner
+    &__scroll
+      display: none
+      
+    &__title
+      font-size: 60px
+      line-height: 70px
+    
+    &__info
+      font-size: 18px
+      line-height: 156%
+      padding-left: 48px
+    
+      &::before
+        width: 33px
+      
+    &__button-wrapper
+      margin-left: 48px
+    
+@media (max-width: $mobile-width-only)
+  .banner
+    &__title
+      font-size: 40px
+      line-height: 47px
+    
+    &__info
+      font-size: 16px
+      padding-left: 48px
+    
+    &__button-wrapper
+      margin-left: 0
+      
+    &__button--desktop
+      display: none
+    
+    &__button--mobile
+      display: block
+      margin-left: 0px
+      max-width: 90%
+    
+
